@@ -2,14 +2,19 @@ package main
 
 import "fmt"
 
+// If variable/function name begins with capital, then it is public
+var someBoolean = false
+
+// Declared variables are required to be used in order to save memory.
+
 func main() {
 
-	// string variables
+	// Various ways of defining variables
 	var nameOne string = "mario"
 	var nameTwo = "luigi"
 	var nameThree string
 
-	fmt.Print(nameOne, nameTwo, nameThree)
+	fmt.Println(nameOne, nameTwo, nameThree, someBoolean)
 
 	nameOne = "peach"
 	nameThree = "bowser"
